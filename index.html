@@ -1,0 +1,213 @@
+<html lang="en">
+  <head>
+    <!-- For Autopilot -->
+    <script type="text/javascript">(function(o){var b="https://api.autopilothq.com/anywhere/",t="ee80715b852a4b20a299e396b113500e808fb0ff6fff433899380c30d67268ce",a=window.AutopilotAnywhere={_runQueue:[],run:function(){this._runQueue.push(arguments);}},c=encodeURIComponent,s="SCRIPT",d=document,l=d.getElementsByTagName(s)[0],p="t="+c(d.title||"")+"&u="+c(d.location.href||"")+"&r="+c(d.referrer||""),j="text/javascript",z,y;if(!window.Autopilot) window.Autopilot=a;if(o.app) p="devmode=true&"+p;z=function(src,asy){var e=d.createElement(s);e.src=src;e.type=j;e.async=asy;l.parentNode.insertBefore(e,l);};y=function(){z(b+t+'?'+p,true);};if(window.attachEvent){window.attachEvent("onload",y);}else{window.addEventListener("load",y,false);}})({});</script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="manifest" href="assets/logo-dark.png">
+    <link rel="shortcut icon" href="assets/logo-dark.png">
+    <link rel="stylesheet" href="style.css">
+
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"
+  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+  crossorigin="anonymous"></script>
+
+    <title>Learn to Code RDU</title>
+
+    <style type="text/css">
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    @font-face {
+      font-family: 'MyFont';
+      src: local('MyFont'), url('assets/bebas-regular.ttf') format('truetype');
+    }
+
+    *{
+      font-family: 'MyFont';
+    }
+    </style>
+
+    <style type="text/css">
+
+    .App {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background-color: #b8cfc9;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    .form{
+      display: -ms-flexbox;
+      display: flex;
+      /* -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center; */
+      -ms-flex-direction: column;
+      flex-direction: column;
+      width: 500px;
+      margin-top: 10px;
+    }
+
+    h1 {
+      color: #3B596A;
+      font-size: 60px;
+      margin: 20px;
+      text-align: center;
+      line-height: 50px;
+      font-weight: 100;
+    }
+
+    .text-input {
+      width: 100%;
+      height: 50px;
+      border: none;
+      padding: 10px;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    input:focus{
+      outline: none;
+    }
+
+    button {
+      padding: 20px;
+      /* width: 50%; */
+      color: #fff;
+      background-color: #3B596A;
+      font-size: 20px;
+      outline: none;
+    }
+
+    button:active {
+      border: none;
+      outline: none;
+    }
+
+    img {
+      max-width: 300px;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .popup {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -ms-flex-align: center;
+      align-items: center;
+      position: absolute;
+      background: #fff;
+      height: 500px;
+      width: 650px;
+    }
+
+    .form-group {
+      display: block;
+      margin-bottom: 15px;
+    }
+
+    .form-group input {
+      padding: 0;
+      height: initial;
+      width: initial;
+      margin-bottom: 0;
+      display: none;
+      cursor: pointer;
+    }
+
+    .form-group label {
+      position: relative;
+      cursor: pointer;
+      font-size: 30px;
+    }
+
+    .form-group label span {
+      margin-left: 10px;
+    }
+
+    .form-group label:before {
+      content:'';
+      -webkit-appearance: none;
+      background-color: transparent;
+      border: 2px solid #3B596A;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+      padding: 10px;
+      display: inline-block;
+      position: relative;
+      vertical-align: middle;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+
+    .form-group input:checked + label:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 9px;
+      width: 6px;
+      height: 14px;
+      border: solid #3B596A;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+
+    .thanks {
+      display: none;
+    }
+
+
+    </style>
+
+  </head>
+
+  <body data-gr-c-s-loaded="true" class="gorgias-loaded">
+
+    <div id="root">
+      <div class="App">
+        <img src="assets/LtC_RDU.png" alt="logo">
+        <form class="form">
+          <h1 class="centered">Please Sign In</h1>
+          <input id="first-name" class="text-input" value="" placeholder="First Name" autofocus>
+          <input id="last-name" class="text-input" value="" placeholder="Last Name">
+          <input id="email" class="text-input" value="" placeholder="Email">
+
+          <p id="app-name-email-error" style="display: none; margin-top: 5px; padding-top: 0; padding-bottom: 0; font-style: italic; color: red;">Please enter a valid email address</p>
+
+          <p id="app-general-error" style="display: none; margin-top: 5px; padding-top: 0; padding-bottom: 0; font-style: italic; color: red;">Please fill out all input fields</p>
+
+          <div class="form-group">
+            <input type="checkbox" id="learn-more">
+            <label for="learn-more"><span>I'd like to learn more about Project Shift</span></label>
+          </div>
+
+          <button type="sumbit">Submit</button>
+        </form>
+
+        <div class="thanks">
+          <h1 class="centered">Thank you!</h1>
+        </div>
+
+      </div>
+    </div>
+
+    <script type="text/javascript" src="main.js"></script>
+  </body>
+</html>
