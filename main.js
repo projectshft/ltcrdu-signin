@@ -4,7 +4,7 @@ var isEmail = function (email) {
 }
 
 $('#learn-more').click(function () {
-  $('.learn-more-input').attr('checked', 'checked')
+  $('#learn-more').attr('checked', 'checked')
 });
 
 $('.form').submit(function (e) {
