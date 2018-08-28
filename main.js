@@ -3,6 +3,10 @@ var isEmail = function (email) {
   return regex.test(email);
 }
 
+$('#learn-more').click(function () {
+  $('.learn-more-input').attr('checked', 'checked')
+});
+
 $('.form').submit(function (e) {
   e.preventDefault();
 
