@@ -3,19 +3,21 @@ var isEmail = function (email) {
   return regex.test(email);
 }
 
-$('#learn-more').click(function () {
-  $('#learn-more').attr('checked', 'checked')
-});
+// $('#learn-more').click(function () {
+//   $('#learn-more').attr('checked', 'checked')
+// });
 
 $('.form').submit(function (e) {
   e.preventDefault();
 
   var email = $('#email').val();
-  var firstName = $('#first-name').val();
-  var lastName = $('#last-name').val();
+  var name = $('#name').val();
+  var company = $('#company').val();
+  // var firstName = $('#first-name').val();
+  // var lastName = $('#last-name').val();
 
   var fullFields = function () {
-    return firstName && lastName;
+    return name + company;
   };
 
   var submitForm = function () {
@@ -34,9 +36,11 @@ $('.form').submit(function (e) {
       }, 2000);
     }).fail(function() {
       $('#email').val('');
-      $('#first-name').val('');
-      $('#last-name').val('');
-      $('#learn-more').prop('checked', false);
+      $('#name').val('');
+      $('#company').val('');
+      // $('#first-name').val('');
+      // $('#last-name').val('');
+      // $('#learn-more').prop('checked', false);
 
       $('.form').hide();
       $('.thanks').show();
