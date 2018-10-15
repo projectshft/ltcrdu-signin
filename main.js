@@ -17,7 +17,8 @@ $('.form').submit(function (e) {
   // var lastName = $('#last-name').val();
 
   var fullFields = function () {
-    return name + company;
+    // return firstName && lastName;
+    return name && company;
   };
 
   var submitForm = function () {
